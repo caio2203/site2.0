@@ -21,8 +21,8 @@
             ],
             "tsConfig": "tsconfig.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/teclado"
             ],
             "styles": [
               "src/styles.css"
@@ -83,7 +83,6 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
