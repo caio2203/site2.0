@@ -1,0 +1,7 @@
+/* src/app/footer/footer.component.css */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+} 

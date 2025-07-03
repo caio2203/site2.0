@@ -1,0 +1,149 @@
+/* src/app/header/header.component.css */
+header {
+  position: fixed;
+  width: calc(100% - 4rem);
+  top: 0;
+  z-index: 100;
+  background: var(--glass-bg);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 40px;
+  padding: 1.5rem 3rem;
+  margin: 1rem 2rem;
+  left: 0;
+  transition: 
+    transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+    opacity 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+    filter 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+    border-radius 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+header.retracting {
+  transform: scaleX(0.3) scaleY(0.7) translateY(0);
+  filter: blur(8px);
+  opacity: 0.7;
+  border-radius: 50px 50px 50px 50px / 40px 40px 40px 40px;
+  pointer-events: none;
+}
+
+header.hiding {
+  transform: translateY(-100px) scaleX(0.3) scaleY(0.7);
+  opacity: 0;
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+header.showing {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #86b5c5, #0c3757);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 25px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.nav-text {
+  position: relative;
+  z-index: 2;
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efeitos específicos para cada item */
+.nav-item-1 .nav-bubble,
+.nav-item-2 .nav-bubble,
+.nav-item-3 .nav-bubble,
+.nav-item-4 .nav-bubble,
+.nav-item-5 .nav-bubble {
+  background: var(--glass-bg);
+  border-color: var(--glass-border);
+}
+
+/* Hover effects para cada item */
+.nav-item:hover .nav-bubble {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: var(--glass-shadow-hover);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Efeitos de texto no hover */
+.nav-item:hover .nav-text {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Animações de entrada para cada bolhinha */
+.nav-item {
+  animation: bubbleFloat 6s ease-in-out infinite;
+}
+
+.nav-item-1 { animation-delay: 0s; }
+.nav-item-2 { animation-delay: 1.2s; }
+.nav-item-3 { animation-delay: 2.4s; }
+.nav-item-4 { animation-delay: 3.6s; }
+.nav-item-5 { animation-delay: 4.8s; }
+
+@keyframes bubbleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+} 

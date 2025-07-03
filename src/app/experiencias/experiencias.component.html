@@ -1,0 +1,13 @@
+<!-- src/app/experiencias/experiencias.component.html -->
+<section id="experiencias">
+  <h2 class="section-title">Experiências</h2>
+  <div class="experience-grid">
+    <div class="experience-card" *ngFor="let experiencia of experiences">
+      <h3 style="color: #fff;">{{ experiencia.title }}</h3>
+      <div class="tech-stack">
+        <span class="tech-tag" *ngFor="let tech of experiencia.skills">{{ tech }}</span>
+      </div>
+      <p>{{ experiencia.description }}</p>
+    </div>
+  </div>
+</section> 

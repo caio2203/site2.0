@@ -1,0 +1,14 @@
+<!-- src/app/header/header.component.html -->
+<header>
+  <div class="nav-container">
+    <div class="logo">Caio Vieira</div>
+    <ul class="nav-links">
+      <li *ngFor="let link of navLinks; let i = index">
+        <a [href]="link.path" class="nav-item" [class]="'nav-item-' + (i + 1)">
+          <div class="nav-bubble"></div>
+          <span class="nav-text">{{ link.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header> 

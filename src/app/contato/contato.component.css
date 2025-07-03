@@ -1,0 +1,229 @@
+/* src/app/contato/contato.component.css */
+#contato {
+  padding: 8rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 60vh;
+}
+
+.contact-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.contact-container p {
+  color: #cbd5e1;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-title, .contact-container h2 {
+  color: #fff !important;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.social-link {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  border: 2.5px solid var(--glass-border);
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(.4,2,.3,1);
+  animation: float 18s infinite ease-in-out;
+  backdrop-filter: blur(18px);
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.social-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.social-link .glow-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #00c6ff, #0072ff);
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.22;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.social-link:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: var(--glass-shadow-hover);
+  border-color: var(--accent-color);
+  background: var(--glass-bg);
+  color: #0a192f;
+}
+
+.social-link i {
+  z-index: 2;
+  color: var(--accent-color);
+  font-size: 2.1rem;
+  transition: color 0.3s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+} 
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.block-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 32px;
+  perspective: 500px;
+  transition: 250ms;
+}
+
+.btn-back {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 32px;
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotateZ(15deg);
+  will-change: transform;
+  box-shadow: 16px 0 40px #00000033;
+}
+
+.btn-back-linkedin {
+  background: linear-gradient(135deg, #0077B5 -20%, #00a0dc 120%);
+}
+
+.btn-back-github {
+  background: linear-gradient(135deg, #333 -20%, #6e6e6e 120%);
+}
+
+.btn-back-email {
+  background: linear-gradient(135deg, #d93025 -20%, #ea4335 120%);
+}
+
+.btn-back-whatsapp {
+  background: linear-gradient(135deg, #25D366 -20%, #128C7E 120%);
+}
+
+.btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  background-color: #ffffff33;
+  backdrop-filter: blur(20px);
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.btn-front .frame {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-front .frame rect {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 4;
+}
+
+.btn-front .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+}
+
+.block-container:hover > .btn-back {
+  transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+}
+
+.block-container:hover > .btn-front {
+  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+}
+
+/* Organização horizontal dos blocos de contato */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container > .block-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-container, .contact-container h2, .contact-container p, .contact-container a, .contact-container .block-list, .contact-container .block-container, .contact-container .btn-front, .contact-container .btn-front .icon {
+  color: #fff !important;
+  fill: #fff !important;
+}

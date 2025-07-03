@@ -1,0 +1,80 @@
+<!-- src/app/contato/contato.component.html -->
+<section id="contato">
+  <h2 class="section-title">Contato</h2>
+  <div class="contact-container">
+    <p>{{ contactText }}</p>
+    
+    <div class="block-list">
+      <!-- LinkedIn -->
+      <div class="block-container">
+        <div class="btn-back btn-back-linkedin"></div>
+        <div class="btn-front">
+          <svg class="frame">
+            <rect rx="32" stroke="url(#gradient-linkedin)" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="48" height="48" viewBox="0 0 24 24" fill="#fff">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 23.5h4V7.5h-4v16zm7.5-16h3.8v2.16h.05c.53-1 1.83-2.16 3.75-2.16 4.01 0 4.75 2.64 4.75 6.08v9.92h-4v-8.8c0-2.11-.04-4.84-2.95-4.84-2.95 0-3.4 2.3-3.4 4.68v8.96h-4V7.5z"/>
+          </svg>
+        </div>
+      </div>
+      <!-- GitHub -->
+      <div class="block-container">
+        <div class="btn-back btn-back-github"></div>
+        <div class="btn-front">
+          <svg class="frame">
+            <rect rx="32" stroke="url(#gradient-github)" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="48" height="48" viewBox="0 0 24 24" fill="#fff">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.547-1.387-1.334-1.756-1.334-1.756-1.09-.746.082-.731.082-.731 1.205.086 1.84 1.24 1.84 1.24 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.762-1.604-2.665-.304-5.466-1.332-5.466-5.933 0-1.31.468-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.404 1.02.004 2.04.137 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.12 3.176.77.84 1.236 1.91 1.236 3.22 0 4.61-2.804 5.626-5.475 5.922.43.37.823 1.096.823 2.21v3.284c0 .32.192.694.8.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="block-container">
+        <div class="btn-back btn-back-email"></div>
+        <div class="btn-front">
+          <svg class="frame">
+            <rect rx="32" stroke="url(#gradient-email)" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="48" height="48" viewBox="0 0 24 24" fill="#fff">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H20a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </div>
+      </div>
+      <!-- WhatsApp -->
+      <div class="block-container">
+        <div class="btn-back btn-back-whatsapp"></div>
+        <div class="btn-front">
+          <svg class="frame">
+            <rect rx="32" stroke="url(#gradient-whatsapp)" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="48" height="48" viewBox="0 0 24 24" fill="#fff">
+            <path d="M16.6 13.3c-.2-.1-1.2-.6-1.4-.7-.2-.1-.4-.1-.5.1-.1.1-.5.7-.6.8s-.2.2-.4.1c-.2-.1-.9-.3-1.7-1-.6-.6-1-1.2-1.2-1.4-.1-.2 0-.3.1-.4.1-.1.2-.2.3-.3s.1-.2.2-.3c.1-.1 0-.2 0-.3s-.5-1.3-.7-1.8c-.2-.5-.4-.4-.5-.4h-.4c-.1 0-.3 0-.5.2s-.6.6-.6 1.4c0 .8.6 1.5.7 1.6.1.1 1.2 1.9 2.9 2.6 1.7.8 1.7.5 2 .4.3 0 1-.4 1.2-.9.1-.4.1-.8.1-.9 0-.2 0-.2-.2-.3zM12 2C6.5 2 2 6.5 2 12c0 2.1.8 4.1 2.1 5.7L2 22l4.3-1.1C7.9 21.2 9.9 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG Gradients -->
+    <svg style="visibility: hidden; width: 0; height: 0;">
+      <defs>
+        <linearGradient id="gradient-linkedin" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0e76a8" />
+          <stop offset="100%" stop-color="#0e76a800" />
+        </linearGradient>
+        <linearGradient id="gradient-github" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#333" />
+          <stop offset="100%" stop-color="#3330000" />
+        </linearGradient>
+        <linearGradient id="gradient-email" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#c71610" />
+          <stop offset="100%" stop-color="#c7161000" />
+        </linearGradient>
+        <linearGradient id="gradient-whatsapp" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#25D366" />
+          <stop offset="100%" stop-color="#25D36600" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
