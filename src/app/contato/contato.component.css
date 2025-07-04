@@ -227,3 +227,33 @@
   color: #fff !important;
   fill: #fff !important;
 }
+
+.contact-quick-links {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.1rem;
+  gap: 0.5rem;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.contact-balloon-msg {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  margin-bottom: 0.1rem;
+  margin-top: -0.7rem;
+}

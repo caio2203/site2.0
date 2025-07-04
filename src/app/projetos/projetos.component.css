@@ -221,4 +221,11 @@
 
 .section-title, .projects-grid .project-header h3 {
   color: #fff !important;
+}
+
+.github-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: inherit;
 } 

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-  title = 'Cientista de Dados & Desenvolvedor';
+  title = 'Engenheiro de Dados & Desenvolvedor';
   subtitle = 'Transformando dados em insights valiosos com soluções inteligentes e inovadoras.';
   ctaText = 'Entre em Contato';
 } 

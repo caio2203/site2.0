@@ -14,19 +14,14 @@ interface Experience {
 export class ExperienciasComponent {
   experiences: Experience[] = [
     {
-      title: 'Cientista de Dados Sênior',
-      skills: ['Python', 'TensorFlow', 'SQL'],
-      description: 'Desenvolvimento de modelos preditivos para análise de mercado, alcançando 95% de precisão nas previsões.'
+      title: 'Estagiário em engenharia e análise de dados no NID',
+      skills: ['Python', 'Spoon (Pentanho)', 'Git', 'Power Bi'],
+      description: 'Refatorei e automatizei pipelines de dados com Python e Spoon, otimizando o fluxo e garantindo a qualidade da informação para integração em Power BI. Paralelamente, realizei análises de dados e implementei RLS no Power BI, proporcionando visualizações segmentadas. Desenvolvi também um sistema de envio automático de relatórios via Power Services, melhorando a comunicação e a tomada de decisão dos contribuintes.'
     },
     {
-      title: 'Engenheiro de Machine Learning',
-      skills: ['PyTorch', 'AWS', 'Docker'],
-      description: 'Implementação de pipelines de dados escaláveis para processamento de grandes volumes de informação.'
-    },
-    {
-      title: 'Analista de Dados',
-      skills: ['Power BI', 'Tableau', 'Excel'],
-      description: 'Criação de dashboards interativos para visualização de dados estratégicos para tomada de decisão.'
+      title: 'Serviços de automação de workflows e integrações',
+      skills: ['Evolution API', 'n8n', 'Google APIs', 'WhatsApp Business', 'Docker'],
+      description: 'Desenvolvi automações de workflows e integrações de sistemas utilizando ferramentas como n8n, Google APIs e WhatsApp Business, em ambiente Docker. Isso resultou na otimização de processos críticos, aumentando a eficiência operacional e garantindo a escalabilidade das soluções implementadas.'
     }
   ];
 } 

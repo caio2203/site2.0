@@ -9,9 +9,9 @@ export class SobreMimComponent implements AfterViewInit {
   @ViewChild('tiltBox', { static: false }) tiltBox!: ElementRef;
 
   paragraphs = [
-    'Olá! Sou Caio Gonçalves Vieira, Cientista de Dados com experiência em Machine Learning, Análise de Dados e Desenvolvimento de Software.',
-    'Minha paixão é transformar dados complexos em soluções práticas que geram valor para negócios e sociedade.',
-    'Com formação em Ciência da Computação e diversos cursos de especialização, trago uma abordagem multidisciplinar para resolver problemas desafiadores.'
+    'Olá! Sou Caio Gonçalves Vieira, Engenheiro de Dados Jr. com experiência em manuntenção e formação de pipelines, análise de aados e desenvolvimento de software.',
+    'Sou apaixonado por projetar e otimizar pipelines de dados escaláveis, garantindo a integridade, disponibilidade e governança da informação para habilitar análises avançadas e decisões orientadas por dados.',
+    'Cursando Sistemas de Informação e com experiência prática na área, trago uma abordagem multidisciplinar para resolver problemas desafiadores.'
   ];
 
   hoverClass = '';

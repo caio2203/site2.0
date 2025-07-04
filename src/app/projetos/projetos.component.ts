@@ -10,8 +10,6 @@ interface Project {
   language?: string;
   stargazers_count?: number;
   forks_count?: number;
-  commits: number;
-  branches: number;
 }
 
 @Component({
@@ -22,31 +20,25 @@ interface Project {
 export class ProjetosComponent implements OnInit {
   projects: Project[] = [
     {
-      name: 'Plataforma de Cursos Online',
-      description: 'Plataforma para criação e venda de cursos online, com área do aluno e integração de pagamentos.',
-      topics: ['angular', 'typescript', 'stripe'],
-      html_url: '#',
-      language: 'TypeScript',
-      commits: 42,
-      branches: 3
+      name: 'Site Crigina Hair',
+      description: 'Criei um site responsivo com Angular, TypeScript, HTML e CSS para apresentação de serviços de beleza. A integração com WhatsApp e a funcionalidade de agendamentos personalizados melhoraram a experiência do cliente e otimizaram o processo de marcação de serviços para o negócio.',
+      topics: ['TypeScript', 'HTML', 'CSS'],
+      html_url: 'privado',
+      language: 'Angular'
     },
     {
-      name: 'App de Tarefas Colaborativas',
-      description: 'Aplicativo web para gerenciamento de tarefas em equipe, com chat integrado e notificações em tempo real.',
-      topics: ['nodejs', 'socket.io', 'mongodb'],
-      html_url: '#',
-      language: 'JavaScript',
-      commits: 27,
-      branches: 2
+      name: 'Automação via WhatsApp',
+      description: 'Desenvolvi uma automação de agendamentos via WhatsApp, integrando Google Calendar e Sheets utilizando n8n em ambiente Dockerizado. Essa solução simplificou o processo de agendamento, reduzindo a carga de trabalho manual e melhorando a organização de compromissos.',
+      topics: ['n8n', 'Docker', 'Google/Meta APIs'],
+      html_url: 'privado',
+      language: 'JavaScript'
     },
     {
-      name: 'Reconhecimento Facial em Imagens',
-      description: 'Sistema de reconhecimento facial para autenticação e controle de acesso usando deep learning.',
-      topics: ['python', 'opencv', 'deep-learning'],
-      html_url: '#',
-      language: 'Python',
-      commits: 58,
-      branches: 4
+      name: 'Análise de E-Commerce',
+      description: 'Realizei a análise de um dataset de e-commerce utilizando Python, Pandas e Jupyter Notebook, identificando os produtos de melhor performance. Automatizei o download de gráficos, agilizando a visualização de insights e apoiando decisões estratégicas para otimização de vendas.',
+      topics: ['Python', 'Pandas', 'Jupyter Notebook'],
+      html_url: 'https://github.com/caio2203/projeto_ecommerce',
+      language: 'Pandas'
     }
   ];
   isLoading = true;
@@ -55,7 +47,7 @@ export class ProjetosComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    // this.fetchGitHubProjects();
+    // Não filtre os projetos privados!
   }
 
   fetchGitHubProjects(): void {
@@ -80,49 +72,25 @@ export class ProjetosComponent implements OnInit {
   private getFallbackProjects(): Project[] {
     return [
       {
-        name: 'Análise de Dados Financeiros',
-        description: 'Sistema de análise preditiva para mercado financeiro usando Python e Machine Learning',
-        topics: ['python', 'machine-learning', 'pandas'],
-        html_url: '#',
-        language: 'Python',
-        commits: 30,
-        branches: 2
+        name: 'Site Crigina Hair',
+        description: 'Criei um site responsivo com Angular, TypeScript, HTML e CSS para apresentação de serviços de beleza. A integração com WhatsApp e a funcionalidade de agendamentos personalizados melhoraram a experiência do cliente e otimizaram o processo de marcação de serviços para o negócio.',
+        topics: ['TypeScript', 'HTML', 'CSS'],
+        html_url: 'privado',
+        language: 'Angular'
       },
       {
-        name: 'Dashboard de BI',
-        description: 'Dashboard interativo para visualização de métricas de negócios',
-        topics: ['powerbi', 'data-visualization', 'business-intelligence'],
-        html_url: '#',
-        language: 'DAX',
-        commits: 15,
-        branches: 1
+        name: 'Automação via WhatsApp',
+        description: 'Desenvolvi uma automação de agendamentos via WhatsApp, integrando Google Calendar e Sheets utilizando n8n em ambiente Dockerizado. Essa solução simplificou o processo de agendamento, reduzindo a carga de trabalho manual e melhorando a organização de compromissos.',
+        topics: ['n8n', 'Docker', 'Google/Meta APIs'],
+        html_url: 'privado',
+        language: 'Angular'
       },
       {
-        name: 'Plataforma de Cursos Online',
-        description: 'Plataforma para criação e venda de cursos online, com área do aluno e integração de pagamentos.',
-        topics: ['angular', 'typescript', 'stripe'],
-        html_url: '#',
-        language: 'TypeScript',
-        commits: 42,
-        branches: 3
-      },
-      {
-        name: 'App de Tarefas Colaborativas',
-        description: 'Aplicativo web para gerenciamento de tarefas em equipe, com chat integrado e notificações em tempo real.',
-        topics: ['nodejs', 'socket.io', 'mongodb'],
-        html_url: '#',
-        language: 'JavaScript',
-        commits: 27,
-        branches: 2
-      },
-      {
-        name: 'Reconhecimento Facial em Imagens',
-        description: 'Sistema de reconhecimento facial para autenticação e controle de acesso usando deep learning.',
-        topics: ['python', 'opencv', 'deep-learning'],
-        html_url: '#',
-        language: 'Python',
-        commits: 58,
-        branches: 4
+        name: 'Análise de E-Commerce',
+        description: 'Realizei a análise de um dataset de e-commerce utilizando Python, Pandas e Jupyter Notebook, identificando os produtos de melhor performance. Automatizei o download de gráficos, agilizando a visualização de insights e apoiando decisões estratégicas para otimização de vendas.',
+        topics: ['Python', 'Pandas', 'Jupyer Notebook'],
+        html_url: 'https://github.com/caio2203/projeto_ecommerce',
+        language: 'Pandas'
       }
     ];
   }
