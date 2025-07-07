@@ -9,8 +9,8 @@ export class SobreMimComponent implements AfterViewInit {
   @ViewChild('tiltBox', { static: false }) tiltBox!: ElementRef;
 
   paragraphs = [
-    'Olá! Sou Caio Gonçalves Vieira, Engenheiro de Dados Jr. com experiência em manuntenção e formação de pipelines, análise de aados e desenvolvimento de software.',
-    'Sou apaixonado por projetar e otimizar pipelines de dados escaláveis, garantindo a integridade, disponibilidade e governança da informação para habilitar análises avançadas e decisões orientadas por dados.',
+    'Olá! Sou Caio Gonçalves Vieira, Engenheiro de Dados Jr. com experiência na manutenção e construção de pipelines de dados, análise exploratória e desenvolvimento de automações para otimização de processos.',
+    'Sou apaixonado por projetar e escalar pipelines de dados eficientes, assegurando a integridade, disponibilidade e governança da informação, com o objetivo de viabilizar análises avançadas e decisões orientadas por dados. Também possuo experiência em ambientes Linux, principalmente com Ubuntu Server e Fedora, onde atuo na automação de tarefas, deploy de serviços e administração de servidores pessoais.',
     'Cursando Sistemas de Informação e com experiência prática na área, trago uma abordagem multidisciplinar para resolver problemas desafiadores.'
   ];
 
