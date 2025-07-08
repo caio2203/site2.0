@@ -219,3 +219,10 @@
   margin-bottom: 0.1rem;
   margin-top: -0.7rem;
 }
+
+@media (max-width: 900px) {
+  .section-title,
+  .contact-container h2 {
+    margin-top: 2.5rem;
+  }
+}

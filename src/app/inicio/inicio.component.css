@@ -165,6 +165,9 @@
     font-size: 1rem;
     margin: 1rem auto 2rem;
   }
+  .hero-content h1 {
+    margin-top: 2.5rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -173,6 +176,12 @@
     height: auto;
     min-height: 400px;
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    margin-top: 2.5rem;
   }
 }
 
