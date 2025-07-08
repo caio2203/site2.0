@@ -1,4 +1,3 @@
-/* src/app/contato/contato.component.css */
 #contato {
   padding: 8rem 2rem;
   max-width: 1200px;
@@ -9,7 +8,6 @@
   justify-content: flex-start;
   min-height: 60vh;
 }
-
 .contact-container {
   text-align: center;
   max-width: 600px;
@@ -21,7 +19,6 @@
   gap: 2.5rem;
   margin-top: 4rem;
 }
-
 .contact-container p {
   color: #cbd5e1;
   margin-bottom: 2.5rem;
@@ -29,18 +26,15 @@
   font-weight: 500;
   text-align: center;
 }
-
 .section-title, .contact-container h2 {
-  color: #fff !important;
+  color: #fff;
 }
-
 .social-links {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
   margin-top: 2.5rem;
 }
-
 .social-link {
   width: 72px;
   height: 72px;
@@ -60,7 +54,6 @@
   animation: float 18s infinite ease-in-out;
   backdrop-filter: blur(18px);
 }
-
 .social-link::before {
   content: '';
   position: absolute;
@@ -68,9 +61,8 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
 }
-
 .social-link::after {
   content: '';
   position: absolute;
@@ -78,9 +70,8 @@
   left: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,0.3), transparent);
 }
-
 .social-link .glow-circle {
   position: absolute;
   width: 100px;
@@ -94,7 +85,6 @@
   right: 0;
   pointer-events: none;
 }
-
 .social-link:hover {
   transform: translateY(-8px) scale(1.08);
   box-shadow: var(--glass-shadow-hover);
@@ -102,19 +92,16 @@
   background: var(--glass-bg);
   color: #0a192f;
 }
-
 .social-link i {
   z-index: 2;
   color: var(--accent-color);
   font-size: 2.1rem;
   transition: color 0.3s;
 }
-
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-} 
-
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
 :host {
   display: flex;
   justify-content: center;
@@ -124,7 +111,6 @@
   width: 100%;
   padding: 2rem 0;
 }
-
 .block-container {
   position: relative;
   width: 80px;
@@ -133,7 +119,6 @@
   perspective: 500px;
   transition: 250ms;
 }
-
 .btn-back {
   position: absolute;
   inset: 0;
@@ -144,25 +129,20 @@
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #00000033;
+  box-shadow: 16px 0 40px #0003;
 }
-
 .btn-back-linkedin {
   background: linear-gradient(135deg, #0077B5 -20%, #00a0dc 120%);
 }
-
 .btn-back-github {
   background: linear-gradient(135deg, #333 -20%, #6e6e6e 120%);
 }
-
 .btn-back-email {
   background: linear-gradient(135deg, #d93025 -20%, #ea4335 120%);
 }
-
 .btn-back-whatsapp {
   background: linear-gradient(135deg, #25D366 -20%, #128C7E 120%);
 }
-
 .btn-front {
   position: absolute;
   inset: 0;
@@ -170,51 +150,38 @@
   width: 100%;
   height: 100%;
   border-radius: 32px;
-  background-color: #ffffff33;
+  background-color: #fff3;
   backdrop-filter: blur(20px);
   transition: 250ms;
   transform-style: preserve-3d;
   transform-origin: top left;
   overflow: hidden;
 }
-
 .btn-front .frame {
   width: 100%;
   height: 100%;
 }
-
 .btn-front .frame rect {
   width: 100%;
   height: 100%;
   fill: none;
   stroke-width: 4;
 }
-
 .btn-front .icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   width: 36px;
   height: 36px;
 }
-
-.block-container:hover > .btn-back {
+.block-container:hover>.btn-back {
   transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
 }
-
-.block-container:hover > .btn-front {
+.block-container:hover>.btn-front {
   transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
 }
-
-/* Organização horizontal dos blocos de contato */
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-container > .block-list {
+.contact-container>.block-list {
   display: flex;
   flex-direction: row;
   gap: 2.2rem;
@@ -222,12 +189,10 @@
   align-items: center;
   width: 100%;
 }
-
-.contact-container, .contact-container h2, .contact-container p, .contact-container a, .contact-container .block-list, .contact-container .block-container, .contact-container .btn-front, .contact-container .btn-front .icon {
-  color: #fff !important;
-  fill: #fff !important;
+.contact-container,.contact-container h2,.contact-container p,.contact-container a,.contact-container .block-list,.contact-container .block-container,.contact-container .btn-front,.contact-container .btn-front .icon {
+  color: #fff;
+  fill: #fff;
 }
-
 .contact-quick-links {
   display: flex;
   gap: 2.5rem;
@@ -236,7 +201,6 @@
   margin-bottom: 1.5rem;
   margin-top: 2.2rem;
 }
-
 .contact-item {
   display: flex;
   align-items: center;
@@ -244,13 +208,11 @@
   font-size: 1.1rem;
   gap: 0.5rem;
 }
-
 .contact-icon {
   width: 20px;
   height: 20px;
   filter: brightness(0) invert(1);
 }
-
 .contact-balloon-msg {
   color: #cbd5e1;
   font-size: 0.85rem;
