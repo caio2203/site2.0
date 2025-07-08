@@ -20,7 +20,7 @@ export class ExperienciasComponent {
     },
     {
       title: 'Serviços de automação de workflows e integrações',
-      skills: ['Evolution API', 'n8n', 'Google APIs', 'WhatsApp Business', 'Docker'],
+      skills: ['Ubuntu Server', 'n8n', 'Google APIs', 'Google / Meta APIs', 'Docker'],
       description: 'Desenvolvi automações de workflows e integrações de sistemas utilizando ferramentas como n8n, Google APIs e WhatsApp Business, em ambiente Docker. Isso resultou na otimização de processos críticos, aumentando a eficiência operacional e garantindo a escalabilidade das soluções implementadas.'
     }
   ];
